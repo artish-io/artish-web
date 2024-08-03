@@ -25,11 +25,11 @@ const Hero = () => {
 		<section className="bg-black h-[800px] relative">
 			<div className="flex gap-10 h-full justify-between ">
 				<div className="max-w-screen-xl mx-auto text-white basis-full md:basis-7/12 pl-8 md:pl-20 pt-28 ">
-					<h1 className="text-6xl md:text-8xl font-semibold leading-tight">
+					<h1 className="text-6xl lg:text-8xl font-semibold leading-tight">
 						Optimise <br />
 						your workflow
 					</h1>
-					<p className="mt-10 w-3/4 text-lg">
+					<p className="mt-10 w-full lg:w-3/4 text-lg">
 						We connect businesses, SMEs and corporates to the most talented
 						digital freelancers in the creator economy
 					</p>
@@ -42,7 +42,7 @@ const Hero = () => {
 					/>
 				</div>
 			</div>
-			<div className="absolute bottom-[100px] md:bottom-[130px] w-full px-8">
+			<div className="absolute bottom-[100px] md:bottom-[80px] lg:bottom-[130px] w-full px-8">
 				<div className="container rounded-lg bg-white px-12 pt-8 py-6">
 					<div className="flex justify-between gap-4 md:gap-20 items-start">
 						<div className="flex-1">

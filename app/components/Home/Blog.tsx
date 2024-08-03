@@ -31,43 +31,46 @@ const blogPosts = [
 
 const Blog = () => {
 	return (
-		<section className="container my-28">
-			<h2 className="text-2xl md:text-3xl font-semibold">Blog</h2>
-			<p className="py-4">
-				Discover the latest trends, tools, and resources in the creator economy.
-			</p>
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-12 ">
-				{blogPosts.map(
-					({ id, title, featureImg, readTime, excerpt, category }) => (
-						<div key={id} className="border-black border-2 rounded-xl">
-							<div className="">
-								<Image
-									src={featureImg}
-									alt={title}
-									width={300}
-									height={300}
-									className="w-full object-cover h-[300px] rounded-tr-xl rounded-tl-xl"
-								/>
-							</div>
-							<div className="p-5 pb-10">
-								<div className="flex gap-3 items-center font-semibold">
-									<span className="bg-[#F4F4F4] p-2 rounded">{category}</span>
-									<span>{readTime} min read</span>
+		<section className="bg-[#FCFBFC]  py-28">
+			<div className="container">
+				<h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">Blog</h2>
+				<p className="py-4 text-base ld:text-xl">
+					Discover the latest trends, tools, and resources in the creator
+					economy.
+				</p>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-12 ">
+					{blogPosts.map(
+						({ id, title, featureImg, readTime, excerpt, category }) => (
+							<div key={id} className="border-black border-2 rounded-xl">
+								<div className="">
+									<Image
+										src={featureImg}
+										alt={title}
+										width={300}
+										height={300}
+										className="w-full object-cover h-[300px] rounded-tr-xl rounded-tl-xl"
+									/>
 								</div>
-								<h3 className="pt-4 pb-3 text-xl font-semibold">{title}</h3>
-								<p>{excerpt}</p>
+								<div className="p-5 pb-10">
+									<div className="flex gap-3 items-center font-semibold">
+										<span className="bg-[#F4F4F4] p-2 rounded">{category}</span>
+										<span>{readTime} min read</span>
+									</div>
+									<h3 className="pt-4 pb-3 text-xl font-semibold">{title}</h3>
+									<p>{excerpt}</p>
+								</div>
 							</div>
-						</div>
-					)
-				)}
-			</div>
-			<div className="flex justify-end">
-				<Link
-					href="/login"
-					className="font-semibold rounded-md border-2 border-black py-3 px-2 md:px-6 bg-white text-black "
-				>
-					View All
-				</Link>
+						)
+					)}
+				</div>
+				<div className="flex justify-end">
+					<Link
+						href="/login"
+						className="font-semibold rounded-md border-2 border-black py-3 px-2 md:px-6 bg-white text-black "
+					>
+						View All
+					</Link>
+				</div>
 			</div>
 		</section>
 	);
