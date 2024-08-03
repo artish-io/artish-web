@@ -31,7 +31,7 @@ const blogPosts = [
 
 const Blog = () => {
 	return (
-		<section className="bg-[#FCFBFC]  py-28">
+		<section className="bg-[#FCFBFC] py-28">
 			<div className="container">
 				<h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">Blog</h2>
 				<p className="py-4 text-base ld:text-xl">

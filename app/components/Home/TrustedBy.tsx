@@ -18,7 +18,7 @@ const TrustedCompanies = [
 const TrustedBy = () => {
 	return (
 		<section className="bg-white">
-			<div className="container flex justify-between items-center py-10">
+			<div className="container flex flex-wrap justify-between items-center py-10">
 				<p className="font-semibold">
 					You can trust us, these companies <br />
 					already have
