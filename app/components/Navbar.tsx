@@ -59,11 +59,14 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div className="md:hidden">
-					<Icon onClick={() => setIsOpen(!isOpen)} className="text-4xl" />
+					<Icon
+						onClick={() => setIsOpen(!isOpen)}
+						className="text-4xl cursor-pointer"
+					/>
 				</div>
 			</div>
 			{isOpen && (
-				<div className="md:hidden py-10 px-5 absolute bg-white top-20 w-full">
+				<div className="md:hidden py-10 px-5 absolute bg-white top-20 w-full z-40">
 					<div className="flex flex-col gap-6">
 						{links.map(({ path, label }) => (
 							<Link key={path} href={path} className="font-semibold">
