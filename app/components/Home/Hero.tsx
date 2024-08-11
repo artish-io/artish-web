@@ -1,4 +1,9 @@
+'use client';
+
 import Image from 'next/image';
+import Link from 'next/link';
+
+import { useState } from 'react';
 
 import spageHeroImg from '@/public/images/spage-man.jpeg';
 
@@ -21,6 +26,8 @@ const suggestedServices = [
 ];
 
 const Hero = () => {
+	const [search, setSearch] = useState('');
+
 	return (
 		<section className="bg-black h-[800px] relative">
 			<div className="flex gap-10 h-full justify-between ">
@@ -48,6 +55,8 @@ const Hero = () => {
 						<div className="flex-1">
 							<input
 								type="text"
+								value={search}
+								onChange={(e) => setSearch(e.target.value)}
 								placeholder="What  freelancing service do you require?"
 								className="w-full border-2 border-[#E9E9E9] rounded-lg p-3 text-[#454545] active:outline-none focus:outline-none"
 							/>
@@ -55,10 +64,11 @@ const Hero = () => {
 								<div className="flex flex-wrap gap-2 md:gap-4 items-center">
 									<p className="text-base font-semibold">Suggested:</p>
 									<div className="flex flex-wrap gap-2 md:gap-5">
-										{suggestedServices.map(({ title }) => (
+										{suggestedServices.map(({ title, index }: any) => (
 											<button
-												key={title}
-												className="border-2 border-[#F5F5F5] text-black rounded-full p-2 text-xs"
+												key={index}
+												onClick={() => setSearch(title)}
+												className="border-2 border-[#F5F5F5] text-black rounded-full p-2 text-xs hover:border-[#b5b5b5] transition-all duration-300"
 											>
 												{title}
 											</button>
@@ -67,9 +77,12 @@ const Hero = () => {
 								</div>
 							</div>
 						</div>
-						<button className="bg-black text-white rounded-lg px-4 md:px-14 py-3">
+						<Link
+							href={`/search?search=${search}`}
+							className="bg-black text-white rounded-lg px-4 md:px-14 py-3"
+						>
 							Search
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>

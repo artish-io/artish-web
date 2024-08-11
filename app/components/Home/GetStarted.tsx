@@ -39,7 +39,7 @@ const GetStarted = () => {
 						</div>
 						<Link
 							href="/login"
-							className="font-semibold rounded-md border-2 border-black py-3 px-10 bg-black text-white inline-flex gap-4 items-center"
+							className="font-semibold rounded-md border border-black py-3 px-10 bg-black text-white inline-flex gap-4 items-center"
 						>
 							Get Started <FaArrowRight />
 						</Link>
@@ -106,13 +106,13 @@ const GetStarted = () => {
 						<div className="flex items-center gap-5 justify-center">
 							<Link
 								href="/login"
-								className="font-semibold rounded-md border-2 border-black py-3 px-2 md:px-6 bg-black text-white"
+								className="font-semibold rounded-md border border-black py-3 px-2 md:px-6 bg-black text-white"
 							>
 								Join as a Freelancer
 							</Link>
 							<Link
 								href="/login"
-								className="font-semibold rounded-md border-2 border-black py-3 px-2 md:px-6 bg-white text-black"
+								className="font-semibold rounded-md border border-black py-3 px-2 md:px-6 bg-white text-black"
 							>
 								Join as a Project Commissioner
 							</Link>

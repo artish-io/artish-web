@@ -1,0 +1,166 @@
+[
+    {
+        "author": {
+            "name": "John Doe",
+            "contact": "john.doe@example.com",
+            "location": "US",
+            "image": "",
+            "rating": 2
+        },
+        "gigs": [
+            {
+                "title": "Responsive Web Design",
+                "category": "Web Development",
+                "tags": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Responsive"
+                ],
+                "description": "I will create a fully responsive website that looks great on all devices, ensuring a seamless user experience.",
+                "featured_image": "",
+                "contact_details": "john.doe@example.com",
+                "location": "US"
+            },
+            {
+                "title": "Custom WordPress Themes",
+                "category": "Web Development",
+                "tags": [
+                    "WordPress",
+                    "PHP",
+                    "Theme Development"
+                ],
+                "description": "Custom WordPress theme development tailored to your specific needs, fully functional and easy to manage.",
+                "featured_image": "",
+                "contact_details": "john.doe@example.com",
+                "location": "US"
+            },
+            {
+                "title": "Website SEO Optimization",
+                "category": "SEO",
+                "tags": [
+                    "SEO",
+                    "Keyword Research",
+                    "On-Page SEO"
+                ],
+                "description": "Optimize your website for search engines with comprehensive SEO services, including keyword research and on-page optimization.",
+                "featured_image": "",
+                "contact_details": "john.doe@example.com",
+                "location": "US"
+            }
+        ]
+    },
+    {
+        "author": {
+            "name": "Jane Smith",
+            "contact": "jane.smith@example.com",
+            "location": "UK",
+            "image": "",
+            "rating": 4
+        },
+        "gigs": [
+            {
+                "title": "Logo Design",
+                "category": "Graphic Design",
+                "tags": [
+                    "Logo",
+                    "Branding",
+                    "Illustration"
+                ],
+                "description": "Professional logo design services to help your brand stand out with a unique and memorable logo.",
+                "featured_image": "",
+                "contact_details": "jane.smith@example.com",
+                "location": "UK"
+            },
+            {
+                "title": "Social Media Graphics",
+                "category": "Graphic Design",
+                "tags": [
+                    "Social Media",
+                    "Graphics",
+                    "Marketing"
+                ],
+                "description": "Create eye-catching social media graphics that boost engagement and elevate your brand's online presence.",
+                "featured_image": "",
+                "contact_details": "jane.smith@example.com",
+                "location": "UK"
+            },
+            {
+                "title": "Business Card Design",
+                "category": "Graphic Design",
+                "tags": [
+                    "Business Card",
+                    "Print Design",
+                    "Branding"
+                ],
+                "description": "Custom business card design that reflects your brand identity and leaves a lasting impression.",
+                "featured_image": "",
+                "contact_details": "jane.smith@example.com",
+                "location": "UK"
+            }
+        ]
+    },
+    {
+        "author": {
+            "name": "Emily Johnson",
+            "contact": "emily.johnson@example.com",
+            "location": "NG",
+            "image": "",
+            "rating": 3
+        },
+        "gigs": [
+            {
+                "title": "Copywriting for Blogs",
+                "category": "Writing",
+                "tags": [
+                    "Copywriting",
+                    "Blogs",
+                    "SEO"
+                ],
+                "description": "Engaging blog posts and articles that attract readers and improve your SEO ranking.",
+                "featured_image": "",
+                "contact_details": "emily.johnson@example.com",
+                "location": "NG"
+            },
+            {
+                "title": "Product Descriptions",
+                "category": "Writing",
+                "tags": [
+                    "Product Descriptions",
+                    "E-commerce",
+                    "SEO"
+                ],
+                "description": "Compelling product descriptions that highlight the key features and benefits, driving sales for your e-commerce store.",
+                "featured_image": "",
+                "contact_details": "emily.johnson@example.com",
+                "location": "NG"
+            },
+            {
+                "title": "Technical Writing",
+                "category": "Writing",
+                "tags": [
+                    "Technical Writing",
+                    "Documentation",
+                    "Guides"
+                ],
+                "description": "Clear and concise technical documentation and guides to help users understand your products or services.",
+                "featured_image": "",
+                "contact_details": "emily.johnson@example.com",
+                "location": "NG"
+            },
+            {
+                "title": "Proofreading and Editing",
+                "category": "Writing",
+                "tags": [
+                    "Proofreading",
+                    "Editing",
+                    "Grammar"
+                ],
+                "description": "Professional proofreading and editing services to ensure your content is error-free and polished.",
+                "featured_image": "",
+                "contact_details": "emily.johnson@example.com",
+                "location": "NG"
+            }
+        ]
+    }
+]

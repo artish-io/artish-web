@@ -62,8 +62,8 @@ const Faqs = () => {
 					{faqs.map(({ id, question, answer }) => (
 						<div
 							key={id}
-							className={`py-5 border-b-2 border-black ${
-								id === 1 ? 'border-t-2' : ''
+							className={`py-5 border-b border-black ${
+								id === 1 ? 'border-t' : ''
 							}`}
 						>
 							<div
@@ -71,22 +71,35 @@ const Faqs = () => {
 								className="flex justify-between items-center cursor-pointer font-semibold"
 							>
 								<p>{question}</p>
-								<IoIosArrowDown />
+								<div
+									className={`transform transition-transform duration-300 ${
+										openItemId === id ? 'rotate-180' : 'rotate-0'
+									}`}
+								>
+									<IoIosArrowDown />
+								</div>
 							</div>
-							{openItemId === id && (
+							<div
+								className={`overflow-hidden transition-all duration-500 ease-in-out ${
+									openItemId === id
+										? 'max-h-96 opacity-100'
+										: 'max-h-0 opacity-0'
+								}`}
+							>
 								<div className="py-5 leading-7">
 									<p>{answer}</p>
 								</div>
-							)}
+							</div>
 						</div>
 					))}
 				</div>
+
 				<div className="space-y-3 pt-10">
 					<h3 className="text-2xl font-semibold">Still have questions?</h3>
 					<p>Contact us for more information or assistance.</p>
 					<Link
 						href="/login"
-						className="font-semibold rounded-md border-2 border-black p-3 bg-white text-black inline-block"
+						className="font-semibold rounded-md border border-black p-3 bg-white text-black inline-block"
 					>
 						Contact Us
 					</Link>

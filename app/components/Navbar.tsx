@@ -28,7 +28,7 @@ const Navbar = () => {
 	const Icon = isOpen ? MdClose : MdOutlineMenu;
 
 	return (
-		<nav className="bg-white py-5">
+		<nav className="bg-white py-5 border-b border-black">
 			<div className="container flex items-center justify-between ">
 				<div className="shrink-0">
 					<Link href="/">
@@ -45,14 +45,14 @@ const Navbar = () => {
 					</div>
 					<div className="flex gap-5">
 						<Link
-							href="/sign-up"
-							className="font-semibold rounded-md border-2 border-black py-2 px-4"
+							href="/get-started"
+							className="font-semibold rounded-md border border-black py-2 px-4"
 						>
 							Get Started
 						</Link>
 						<Link
 							href="/login"
-							className="font-semibold rounded-md border-2 border-black py-2 px-4 bg-black text-white"
+							className="font-semibold rounded-md border border-black py-2 px-4 bg-black text-white"
 						>
 							Login
 						</Link>
@@ -75,14 +75,14 @@ const Navbar = () => {
 						))}
 						<div className="flex gap-5">
 							<Link
-								href="/sign-up"
-								className="font-semibold rounded-md border-2 border-black py-2 px-4"
+								href="/get-started"
+								className="font-semibold rounded-md border border-black py-2 px-4"
 							>
 								Get Started
 							</Link>
 							<Link
 								href="/login"
-								className="font-semibold rounded-md border-2 border-black py-2 px-4 bg-black text-white"
+								className="font-semibold rounded-md border border-black py-2 px-4 bg-black text-white"
 							>
 								Login
 							</Link>

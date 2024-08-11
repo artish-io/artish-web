@@ -41,7 +41,7 @@ const Blog = () => {
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-12 ">
 					{blogPosts.map(
 						({ id, title, featureImg, readTime, excerpt, category }) => (
-							<div key={id} className="border-black border-2 rounded-xl">
+							<div key={id} className="border-black border rounded-xl">
 								<div className="">
 									<Image
 										src={featureImg}
@@ -66,7 +66,7 @@ const Blog = () => {
 				<div className="flex justify-end">
 					<Link
 						href="/login"
-						className="font-semibold rounded-md border-2 border-black py-3 px-2 md:px-6 bg-white text-black "
+						className="font-semibold rounded-md border border-black py-3 px-2 md:px-6 bg-white text-black "
 					>
 						View All
 					</Link>

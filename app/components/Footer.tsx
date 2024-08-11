@@ -9,7 +9,7 @@ import { RiTwitterXFill } from 'react-icons/ri';
 
 const Footer = () => {
 	return (
-		<footer className="bg-white">
+		<footer className="bg-[#FCFBFC] pt-10">
 			<div className="container flex justify-between flex-col md:flex-row">
 				<div className="mb-12 md:mb-0">
 					<div className="shrink-0">
@@ -101,7 +101,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<div className="container mt-12 mb-10">
+			<div className="container mt-12 pb-10">
 				<div className="flex flex-wrap justify-center md:justify-between text-sm border-t pt-4 border-black">
 					<p>© 2023 ARTISH LLC. All rights reserved.</p>
 					<div className="flex gap-3 underline mt-2 md:mt-0">
